@@ -1,0 +1,139 @@
+.section-wrapper {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin-left: 1.2em;
+}
+
+.close {
+    position: absolute;
+    left: 20.7em;
+    top: -3.6em;
+    z-index: 20;
+    border: none;
+    padding: 1em;
+  }
+
+.blu {
+    display: block;
+    height: 1.5em;
+    width: 5em;
+    background-color: var(--blue-bg);
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.credit-card {
+    width: 14em;
+    height: 21.8em;
+    background: linear-gradient(180deg, rgb(255,255,255, 0.6), #fff);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0px 4px 14px 2px rgb(142 142 142 / 15%);
+    position: relative;
+    top: 1.5em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+}
+
+@media (max-width: 1188px) {
+    .section-wrapper {
+        margin-left: 1.4em;
+    }
+
+    .close {
+        left: 15.4em;
+      }
+
+    .blu {
+        width: 3em;
+    }
+
+    .credit-card {
+        width: 12em;
+        height: 22.7em;
+    }
+}
+
+@media (max-width: 1058px) {
+    .section-wrapper {
+        margin-left: 0.4em;
+    }
+
+    .close {
+        top: -1.8em;
+      }
+
+    .credit-card {
+        padding: 0.8em;
+        width: 10em;
+        height: 22em;
+    }
+}
+
+@media (max-width: 904px) {
+    .section-wrapper {
+        margin-left: -0.11em;
+    }
+
+    .close {
+        top: -3.6em;
+    }
+}
+
+@media (max-width: 754px) {
+    .close {
+        left: 13.7em;
+        top: -1.8em;
+        padding: 0.5em;
+      }
+
+    .blu {
+        width: 2.4em;
+    }
+
+    .credit-card {
+        width: 8em;
+        height: 21em;
+    }
+}
+
+@media (max-width: 654px) {
+    .close {
+        left: 11.1em;
+        top: -1.2em;
+      }
+
+    .blu {
+        width: 1.4em;
+    }
+
+    .credit-card {
+        width: 7em;
+    }
+}
+
+@media (max-width: 520px) {
+    .credit-card {
+        width: 10em;
+        height: 13.8em;
+        left: 11em;
+    }
+    
+    .blu {
+        width: 4em;
+        left: 11em;
+    }
+}
+
+@media (max-width: 394px) {
+    .credit-card,
+    .blu {
+        left: 8em;
+    }
+}

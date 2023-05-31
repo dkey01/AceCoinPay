@@ -1,0 +1,36 @@
+.card-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8em;
+}
+
+.wifi {
+    height: 1.8em;
+}
+
+.chip {
+    height: 3.1em;
+}
+
+@media (max-width: 1188px) {
+    .card-head {
+        margin-bottom: 6em;
+    }
+
+    .wifi,
+    .chip {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 754px) {
+    .wifi {
+        height: 1.3em;
+    }
+    
+    .chip {
+        height: 2.6em;
+    }
+}

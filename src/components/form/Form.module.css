@@ -1,0 +1,30 @@
+.btn-submit {
+    background-color: var(--blue-bg);
+    width: 100%;
+    padding: 1.2em 0;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 0.6em;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #0645b2;
+}
+
+@media (max-width: 904px) {
+    .btn-submit {
+        width: 70%;
+        padding: 0.8em 0;
+        margin-left: 3.3em;
+    }
+}
+
+@media (max-width: 754px) {
+    .btn-submit {
+        font-size: 1em;
+    }
+}

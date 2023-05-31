@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background: url(./assets/aceBG.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 165%;
+}
+
+@media (max-width: 1188px) {
+  body {
+    background-size: 195%;
+  }
+}
+
+@media (max-width: 908px) {
+  body {
+    background-size: 235%;
+  }
+}
+
+@media (max-width: 828px) {
+  body {
+    background-size: cover;
+  }
+}
+
+:root {
+  --text-one: #05365c;
+  --text-two: #8e96a3;
+  --active-border: #035fff;
+  --input-border: rgb(224 224 224 / 50%);
+  --dark-bg: #17254c;
+  --blue-bg: #035fff;
 }

@@ -1,0 +1,32 @@
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 1.4em;
+}
+
+.expiry {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.card-logo {
+    height: 2.5em;
+}
+
+@media (max-width: 754px) {
+    .expiry {
+        font-size: 0.8em;
+    }
+    
+    .card-logo {
+        height: 2em;
+    }
+}
+
+@media (max-width: 520px) {
+    .card-footer {
+        top: -60px;
+    }
+}

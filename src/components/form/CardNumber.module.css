@@ -1,0 +1,233 @@
+.input-group {
+    margin-bottom: 2em;
+}
+
+.header,
+.edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {  
+    margin-bottom: 1.8em;
+}
+
+.description h2 {
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--text-one);
+}
+
+.description p {
+    font-size: 0.77em;
+    font-weight: 500;
+    color: var(--text-two);
+}
+
+.edit {
+    color: #08a8ef;
+    border: none;
+    background-color: transparent;
+}
+
+.pencil {
+    fill: #08a8ef;
+    font-size: 1.8em;
+}
+
+.btn-desc {
+    display: block;
+    margin-left: 0.6em;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.main {
+    position: relative;
+    margin-top: 1em;
+    border: 2px solid var(--input-border);
+    border-radius: 6px;
+    outline-color: var(--active-border);
+    background: linear-gradient(45deg, #f8faf9, transparent);
+}
+
+.input-group {
+    margin-left: 2em;
+}
+
+.main input {
+    width: 10.5%;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+
+.main input::-webkit-inner-spin-button,
+.main input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.divider {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0.8em;
+    margin-right: 1.3em;
+}
+
+.main input,
+.divider {
+    position: relative;
+    top: 1em;
+    left: 2.7em;
+}
+
+.main input::placeholder {
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.main img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+.card-icon {
+    left: 1.2em;
+    height: 2em;
+}
+
+.verify-icon{
+    right: 1.2em;
+    height: 1.5em;
+}
+
+@media (max-width: 904px) {
+    .header {  
+        justify-content: space-evenly;
+    }
+
+    .main {
+        margin-right: 1.8em;
+    }
+    
+    .main input {
+        width: 13.5%;
+    }
+    
+    .divider {
+        font-size: 1em;
+        margin: 0.7em;
+    }
+
+    .main input,
+    .divider {
+    left: 0.9em;
+    }
+
+    .card-icon {
+        left: 0.1em;
+        height: 2em;
+    }
+    
+    .verify-icon{
+        right: 0.3em;
+        height: 1.5em;
+    }
+  }
+
+  @media (max-width: 754px) {
+    .description h2 {
+        font-size: 0.9em;
+    }
+    
+    .description p {
+        font-size: 0.66em;
+    }
+
+    .main input,
+    .divider {
+        left: 1.7em;
+    }
+
+    .main input {
+        width: 13.5%;
+        font-size: 0.9em;
+    }
+
+    .divider {
+        margin: 0.4em;
+    }
+    
+    .card-icon {
+        left: 0.1em;
+        height: 2em;
+    }
+    
+    .verify-icon{
+        right: 0.3em;
+        height: 1.5em;
+    }
+  }
+
+  @media (max-width: 654px) {
+    .main{
+        padding: 0;
+        margin-right: 2em;
+        max-height: 2.5em
+    }
+
+    .main input {
+        width: 17.4%;
+        font-size: 0.9em;
+    }
+
+    .divider {
+        margin: 0;
+    }
+
+    .main input,
+    .divider {
+        top: 0.3em;
+        left: 0.2em;
+    }
+
+    .card-icon {
+        left: 0.1em;
+        height: 1.2em;
+    }
+    
+    .verify-icon{
+        right: 0.2em;
+        height: 0.8em;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .main{
+        width: 100%;
+        min-width: 15rem;
+    }
+
+    .divider {
+        margin: 0 0.5em;
+    }
+
+    .main input {
+        width: 14.4%;
+    }
+
+    @media (max-width: 520px) {
+        .divider {
+            margin: 0 0.3em;
+        }
+    
+        .main input {
+            width: 16.4%;
+        }
+    }
+  }

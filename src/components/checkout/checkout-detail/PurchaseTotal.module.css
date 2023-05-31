@@ -1,0 +1,164 @@
+.purchase-total {
+    position: absolute;
+    bottom: -1em;
+    width: 100%;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.purchase-total img{
+    height: 1.6em;
+    position: absolute;
+    left: 15em;
+    bottom: 3em;
+}
+
+.desc {
+    color: #8e96a3;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.total-amount {
+    display: flex;
+    align-items: center;
+    color: var(--text-one);
+    margin-top: -1.5em;
+}
+
+.total-amount sub {
+    position: relative;
+    font-size: 0.6em;
+    bottom: 7px;
+    font-weight: 600;
+}
+
+.amount {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.symbol {
+    position: relative;
+    font-size: 1.1em;
+    top: 4px;
+    margin-left: 0.4em;
+    color: #8e96a3;
+}
+
+@media (max-width: 1188px) {
+    .purchase-total img{
+        left: 12em;
+    }
+}
+
+@media (max-width: 1058px) {
+    .purchase-total img{
+        left: 10.5em;
+        height: 1.5em;
+    }
+
+    .purchase-total {
+        padding: 0 1em;
+    }
+
+    .desc {
+        font-size: 0.7em;
+    }
+
+    .total-amount sub {
+        bottom: 5px;
+    }
+
+    .amount {
+        font-size: 1.2em;
+    }
+
+    .total-amount {
+        margin-bottom: 1em;
+        margin-top: -0.5em;
+    }
+
+    .symbol {
+        top: 0;
+    }
+}
+
+@media (max-width: 904px) {
+    .purchase-total img{
+        left: 9em;
+    }
+}
+
+@media (max-width: 754px) {
+    .purchase-total img{
+        left: 8em;
+        height: 1.3em;
+    }
+}
+
+@media (max-width: 654px) {
+    .desc {
+        font-size: 0.5em;
+    }
+
+    .amount {
+        font-size: 1.3em;
+    }
+
+    .total-amount sub {
+        font-size: 0.5em;
+    }
+    
+    .symbol {
+        font-size: 0.8em;
+    }
+
+    .purchase-total img{
+        left: 6.5em;
+        bottom: 3.5em;
+        height: 1.1em;
+    }
+}
+
+@media (max-width: 520px) {
+    .purchase-total {
+        bottom: -1em;
+        width: 100%;
+        padding: 0 2em;
+    }
+    
+    .purchase-total img{
+        height: 1.6em;
+        left: 11.5em;
+        bottom: 4em;
+    }
+    
+    .desc {
+        font-size: 0.65em;
+        font-weight: 400;
+    }
+    
+    .total-amount {
+        margin-top: -1.5em;
+    }
+    
+    .total-amount sub {
+        font-size: 0.6em;
+        bottom: 7px;
+        font-weight: 500;
+    }
+    
+    .amount {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    
+    .symbol {
+        font-size: 1.1em;
+        top: 4px;
+        margin-left: 0.4em;
+    }
+}
